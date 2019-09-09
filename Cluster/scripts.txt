@@ -1,0 +1,17 @@
+$ ecs-cli up --capability-iam --keypair <key-name> --size 2 --instance-type t2.micro --cluster ecs-cli-demo
+
+
+
+INFO[0000] Using recommended Amazon Linux 2 AMI with ECS Agent 1.30.0 and Docker version 18.06.1-ce 
+INFO[0000] Created cluster                               cluster=ecs-cli-demo region=us-east-1
+INFO[0001] Waiting for your cluster resources to be created... 
+INFO[0001] Cloudformation stack status                   stackStatus=CREATE_IN_PROGRESS
+INFO[0062] Cloudformation stack status                   stackStatus=CREATE_IN_PROGRESS
+INFO[0122] Cloudformation stack status                   stackStatus=CREATE_IN_PROGRESS
+VPC created: vpc-xx
+Security Group created: sg-xx
+Subnet created: subnet-xx
+Subnet created: subnet-xx
+Cluster creation succeeded.
+
+$ ecs-cli down ecs-cli-demo
